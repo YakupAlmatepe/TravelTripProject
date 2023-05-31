@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TravelTripProject.Models.Sınıflar;
-
+using TravelTripProject.Models.Siniflar;
 
 namespace TravelTripProject.Controllers
 {
@@ -12,6 +12,7 @@ namespace TravelTripProject.Controllers
     {
         // GET: Default
         Context c = new Context();
+      
         public ActionResult Index()
         {
             var degerler = c.Blogs.OrderByDescending(x => x.ID).Take(5).ToList();

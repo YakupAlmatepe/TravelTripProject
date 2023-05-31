@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace TravelTripProject.Models.Siniflar
+namespace TravelTripProject.Models.Sınıflar
 {
    
         public class Admin
@@ -13,6 +13,7 @@ namespace TravelTripProject.Models.Siniflar
             public int ID { get; set; }
             public string Sifre { get; set; }
             public string Kullanici { get; set; }
-        }
+         
+    }
     
 }

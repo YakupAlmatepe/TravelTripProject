@@ -136,9 +136,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202305191719339_mig_admin.cs" />
-    <Compile Include="Migrations\202305191719339_mig_admin.designer.cs">
-      <DependentUpon>202305191719339_mig_admin.cs</DependentUpon>
+    <Compile Include="Migrations\202305311412466_mig1.cs" />
+    <Compile Include="Migrations\202305311412466_mig1.designer.cs">
+      <DependentUpon>202305311412466_mig1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
@@ -287,6 +287,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Rehber\" />
     <Folder Include="Views\Shared\Resimler\" />
   </ItemGroup>
   <ItemGroup>
@@ -317,8 +318,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202305191719339_mig_admin.resx">
-      <DependentUpon>202305191719339_mig_admin.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305311412466_mig1.resx">
+      <DependentUpon>202305311412466_mig1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

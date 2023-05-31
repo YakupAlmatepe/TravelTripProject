@@ -8,10 +8,9 @@ namespace TravelTripProject.Models.Sınıflar
 {
     public class Hakkimizda
     {
-        [Key] 
+        [Key]
         public int ID { get; set; }
         public string FotoUrl { get; set; }
-        
         public string Aciklama { get; set; }
     }
 }

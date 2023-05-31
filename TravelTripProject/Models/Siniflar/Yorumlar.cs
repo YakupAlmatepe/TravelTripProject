@@ -8,7 +8,7 @@ namespace TravelTripProject.Models.Sınıflar
 {
     public class Yorumlar
     {
-        [Key] 
+        [Key]
         public int ID { get; set; }
         public string KullaniciAdi { get; set; }
         public string Mail { get; set; }

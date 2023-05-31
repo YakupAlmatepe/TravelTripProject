@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TravelTripProject.Models.Sınıflar;
+using TravelTripProject.Models.Siniflar;
 
 namespace TravelTripProject.Controllers
 {
@@ -11,10 +12,13 @@ namespace TravelTripProject.Controllers
     {
         // GET: About
         Context context = new Context();
+  
         public ActionResult Index()
         {
-            var degerler = context.Hakkimizdas.ToList();   
-            return View(degerler);
+            //var degerler = context.Hakkimizdas.ToList();   
+            var values =context.Hakkimizdas.ToList();
+          
+            return View(values);
         }
     }
 }

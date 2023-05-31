@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Web;
 using System.Web.Mvc;
 using TravelTripProject.Models.Sınıflar;
+using TravelTripProject.Models.Siniflar;
 
 namespace TravelTripProject.Controllers
 {
@@ -12,6 +13,7 @@ namespace TravelTripProject.Controllers
     {
         // GET: Admin
         Context c = new Context();
+      
         [Authorize]
         public ActionResult Index()
         {
