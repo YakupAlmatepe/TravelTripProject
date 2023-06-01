@@ -39,7 +39,7 @@ namespace TravelTripProject.Controllers
         }
         public PartialViewResult Partial4()
         {
-            var deger = c.Blogs.OrderByDescending(x => x.ID).Take(3).ToList();
+            var deger = c.Blogs.Take(3).ToList();
             return PartialView(deger);
         }
         public PartialViewResult Partial5()

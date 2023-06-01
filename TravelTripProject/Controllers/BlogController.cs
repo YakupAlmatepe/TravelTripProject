@@ -18,7 +18,7 @@ namespace TatilSitesiBlog.Controllers
         {
             //var bloglar = c.Blogs.ToList();
             by.Deger1 = c.Blogs.ToList();
-            by.Deger3 = c.Blogs.Take(3);
+            by.Deger3 = c.Blogs.OrderByDescending(x => x.ID).Take(3).ToList();// yorumları son yapılandan ilk yapılana sıralama kodu
             return View(by);
         }
 
@@ -44,7 +44,7 @@ namespace TatilSitesiBlog.Controllers
             c.Yorumlars.Add(yorumlar);
             c.SaveChanges();
             return PartialView();
-        }
+        }      
 
     }
 }

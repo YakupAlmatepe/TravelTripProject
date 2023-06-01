@@ -30,13 +30,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!--end slider -->
     <!--script-->
-   
     <!---->
 
 </head>
 <body>
     <!---header---->
-    <div class="header">       
+    <div class="header">
     </div>
     <!--/header-->
     <div class="single">
@@ -47,59 +46,47 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     {
 
 
-                    <img src="@item.BlogImage" alt=""style="margin-bottom:20px" />
-                    <h2>@item.Baslik</h2>
-                    <p>
-                        @item.Aciklama
-                    </p>
+                        <img src="@item.BlogImage" alt="" style="margin-bottom:20px" />
+                        <h2>@item.Baslik</h2>
+                        <p>
+                            @item.Aciklama
+                        </p>
                     }
                 </div>
                 @foreach (var x in Model.Deger2)
                 {
 
-                <ul class="comment-list">
+                    <ul class="comment-list">
 
-                    <li>
-                        <img src="~/web2/images/avatar.png" class="img-responsive" alt="">
-                        <div class="desc">
-                            <p>@x.KullaniciAdi : @x.Yorum 
-                        </div>
-                        <div class="clearfix"></div>
-                    </li>
-                </ul>
+                        <li>
+                            <img src="~/web2/images/avatar.png" class="img-responsive" alt="">
+                            <div class="desc">
+                                <p>@x.KullaniciAdi : @x.Yorum
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
 
                 }
-             @Html.Action("YorumYap","Blog")
+                @Html.Action("YorumYap", "Blog")
+                <br />
+                <br />
+                <a href="/Blog/Index">
+                    <button class="btn btn-primary">Blog Sayfasına Dön</button>
+                </a>
             </div>
 
-            <div class="col-md-4 side-content">
-                <div class="recent">
-                    <h3>RECENT POSTS</h3>
-                    <ul>
-                        <li><a href="#">Aliquam tincidunt mauris</a></li>
-                        <li><a href="#">Vestibulum auctor dapibus  lipsum</a></li>
-                        <li><a href="#">Nunc dignissim risus consecu</a></li>
-                        <li><a href="#">Cras ornare tristiqu</a></li>
-                    </ul>
-                </div>
-                <div class="comments">
-                    <h3>RECENT COMMENTS</h3>
-                    <ul>
-                        <li><a href="#">Amada Doe </a> on <a href="#">Hello World!</a></li>
-                        <li><a href="#">Peter Doe </a> on <a href="#"> Photography</a></li>
-                        <li><a href="#">Steve Roberts  </a> on <a href="#">HTML5/CSS3</a></li>
-                    </ul>
-                </div>
-              
-            </div>
+           
             <div class="clearfix"></div>
         </div>
     </div>
-  
-    </body>
+
+
+</body>
 </html>
-    
-    
+
+
+
 
 
 
